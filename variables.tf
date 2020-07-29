@@ -1,6 +1,6 @@
 variable "ibmcloud_region" {
   description = "Preferred IBM Cloud region to use for your infrastructure"
-  default = "us-south"
+  default = "eu-de"
 }
 
 variable "vpc_name" {
@@ -19,7 +19,7 @@ variable "zone1_cidr" {
 }
 
 variable "ssh_key_name" {
-  default = ""
+  default = "sshkeymk"
   description = "Name of existing VPC SSH Key"
 }
 
