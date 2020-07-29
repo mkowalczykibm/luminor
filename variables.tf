@@ -32,3 +32,9 @@ variable "profile" {
   default = "cx2-2x4"
   description = "Instance profile to be used for virtual instances"
 }
+
+
+variable "instance_count" {
+  default = "1"
+  description = "Number of instances to provision"
+}
