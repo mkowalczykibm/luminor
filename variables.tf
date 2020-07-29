@@ -24,7 +24,7 @@ variable "ssh_key_name" {
 }
 
 variable "image" {
-  default = "ibm-ubuntu-18-04-1-minimal-amd64-2"
+  default = "r010-ed3f775f-ad7e-4e37-ae62-7199b4988b00"
   description = "OS Image ID to be used for virtual instances"
 }
 
