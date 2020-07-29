@@ -34,7 +34,6 @@ resource "ibm_is_instance" "instance" {
   vpc  = "${ibm_is_vpc.vpc1.id}"
   zone = "${var.zone1}"
   keys = ["${data.ibm_is_ssh_key.sshkey1.id}"]
-  user_data = "${data.template_cloudinit_config.cloud-init-apptier.rendered}"
 }
 
 resource "ibm_is_security_group_rule" "sg1_tcp_rule_22" {
