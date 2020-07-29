@@ -22,7 +22,7 @@ resource "ibm_is_subnet" "subnet1" {
   depends_on      = ["ibm_is_vpc_address_prefix.vpc-ap1"]
 }
 
-resource "ibm_is_instance" "instance1" {
+resource "ibm_is_instance" "instance" {
   count   = "${var.instance_count}"
   image   = "${var.image}"
   profile = "${var.profile}"
