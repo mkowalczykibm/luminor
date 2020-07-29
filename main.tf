@@ -24,6 +24,7 @@ resource "ibm_is_subnet" "subnet1" {
 
 resource "ibm_is_instance" "instance1" {
   name    = "instance1"
+  count   = "${var.instance_count}"
   image   = "${var.image}"
   profile = "${var.profile}"
 
