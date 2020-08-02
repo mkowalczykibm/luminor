@@ -4,7 +4,7 @@ variable "ibmcloud_region" {
 }
 
 variable "vpc_name" {
-  default = "luminorvpc"
+  default = "lumvpcschematics"
   description = "Name of your VPC"
 }
 
@@ -19,7 +19,7 @@ variable "zone1_cidr" {
 }
 
 variable "ssh_key_name" {
-  default = "sshkeymk"
+  default = "vpckeymk"
   description = "Name of existing VPC SSH Key"
 }
 
