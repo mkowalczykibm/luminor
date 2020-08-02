@@ -35,6 +35,6 @@ variable "profile" {
 
 
 variable "instance_count" {
-  default = "1"
+  default = "10"
   description = "Number of instances to provision"
 }
